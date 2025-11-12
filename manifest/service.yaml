@@ -5,9 +5,9 @@ metadata:
   namespace: webapp
 spec:
   selector:
-    type: NodePort
     app: nginx
   ports:
   - port: 80
     targetPort: 80
     nodePort: 30001
+  type: NodePort
